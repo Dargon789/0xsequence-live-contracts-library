@@ -1,10 +1,9 @@
 version: 2.1
-
+# TODO: Set the correct values for environment, component, and version before deploying.
 jobs:
   say-hello:
    docker:
       - image: cimg/base:current
-      
     steps:
       - checkout
       - run:
