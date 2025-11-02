@@ -3,14 +3,14 @@ name: Deploy testnets
 on:
   push:
     branches:
-      - "**"
+      - "main"
 
 permissions:
   contents: read
 
 concurrency:
   group: deploy-testnets-${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   discover-matrix:
