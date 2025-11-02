@@ -3,7 +3,7 @@ name: Deploy testnets
 on:
   push:
     branches:
-      - "**"
+      - "main"
 
 permissions:
   contents: read
