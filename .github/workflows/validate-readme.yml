@@ -3,7 +3,7 @@ name: Validate README
 on:
   push:
     branches:
-      - "**"
+      - "master"
 
 permissions:
   contents: read
